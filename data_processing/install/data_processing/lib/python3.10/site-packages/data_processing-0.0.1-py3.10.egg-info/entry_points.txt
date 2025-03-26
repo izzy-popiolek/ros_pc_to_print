@@ -1,0 +1,6 @@
+[console_scripts]
+mesh_modifier_node = data_processing.mesh_modifier_node:main
+mesh_publisher_node = data_processing.mesh_publisher_node:main
+mesh_to_stl_node = data_processing.mesh_to_stl_node:main
+pcd_publisher_node = data_processing.pcd_publisher_node:main
+

@@ -1,0 +1,62 @@
+## Example slicer configuration file for ROS2 Mesh to STL Converter
+## Save this as slicer_config.yaml in your ROS2 package configuration directory
+
+# Common settings
+slicer_type: "prusaslicer"  # Options: prusaslicer, cura, simplify3d
+slicer_executable_path: "/usr/bin/prusaslicer"  # Path to your slicer executable
+auto_slice: true  # Automatically slice when mesh is received
+auto_print: false  # Automatically send to printer after slicing (not implemented yet)
+output_directory: "/home/ldlidar_ros_ws/src/data_processing/resource/outputs"  # Directory to save STL and G-code files
+filename_prefix: "ros_part"  # Prefix for output files
+subscribe_topic: "modified_mesh"  # Which mesh topic to listen to: 'mesh' or 'modified_mesh'
+
+# PrusaSlicer specific settings
+prusaslicer:
+  print:
+    layer_height: 0.2
+    perimeters: 3
+    top_solid_layers: 5
+    bottom_solid_layers: 5
+    fill_density: 20%
+    fill_pattern: gyroid
+    
+  printer:
+    nozzle_diameter: 0.4
+    bed_temperature: 60
+    extruder_temperature: 210
+    bed_shape: 250x210
+    
+  filament:
+    filament_type: PLA
+    filament_diameter: 1.75
+    filament_density: 1.24
+    first_layer_temperature: 215
+
+# Cura specific settings
+cura:
+  layer_height: 0.2
+  infill_sparse_density: 20
+  infill_pattern: gyroid
+  adhesion_type: skirt
+  material_bed_temperature: 60
+  material_print_temperature: 210
+
+# Simplify3D specific settings
+simplify3d:
+  layerHeight: 0.2
+  extrusionMultiplier: 1.0
+  firstLayerHeightPercentage: 90
+  firstLayerWidthPercentage: 100
+  firstLayerUnderspeed: 0.5
+  infillPercentage: 20
+  infillShape: TRIANGULAR
+  defaultExtruder: 0
+  rapidXYSpeed: 4800
+  rapidZSpeed: 1000
+  minBridgingArea: 5
+  bridgingExtraInflation: 0
+  bridgingExtrusionMultiplier: 1
+  bridgingSpeedMultiplier: 1
+  useFixedBridgingAngle: 0
+  fixedBridgingAngle: 0
+  applyBridgingToPerimeters: 0

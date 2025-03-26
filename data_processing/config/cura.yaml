@@ -1,0 +1,46 @@
+## Configuration file for Cura integration with ROS2
+## Save this as cura_config.yaml in your ROS2 package configuration directory
+
+# Node configuration
+output_directory: "/src/data_processing/resource/outputs"  # Where to save files
+stl_subdirectory: "stl"                       # Subdirectory for STL files
+gcode_subdirectory: "gcode"                   # Subdirectory for G-code files
+subscribe_topic: "modified_mesh"              # Which mesh topic to listen to: 'mesh' or 'modified_mesh'
+filename_prefix: "ros_part"                   # Prefix for output files
+
+# Cura executable path (use the correct path for your system)
+cura_executable_path: "/snap/cura-slicer/182/usr/bin/cura"      # Path for standard apt installation
+
+# If using flatpak, you would use:
+# cura_executable_path: "/usr/bin/flatpak"
+
+# Cura slicing parameters
+cura:
+  # Basic settings
+  layer_height: 0.2                # Height of each printed layer (mm)
+  infill_sparse_density: 20        # Infill percentage
+  infill_pattern: "gyroid"         # Infill pattern
+  
+  # Adhesion and platform
+  adhesion_type: "skirt"           # Options: none, skirt, brim, raft
+  material_bed_temperature: 60     # Bed temperature in celsius
+  
+  # Temperatures
+  material_print_temperature: 210  # Nozzle temperature in celsius
+  
+  # Dimensions
+  wall_thickness: 1.2              # Thickness of outer walls
+  top_thickness: 0.8               # Thickness of top layers
+  bottom_thickness: 0.8            # Thickness of bottom layers
+  
+  # Speed settings
+  speed_print: 60                  # Print speed (mm/s)
+  speed_travel: 120                # Travel speed (mm/s)
+  
+  # Retraction
+  retraction_enable: true          # Enable filament retraction
+  retraction_amount: 5             # Amount to retract (mm)
+  
+  # Other settings
+  cooling_enable: true             # Enable part cooling fan
+  support_enable: false            # Enable support structures

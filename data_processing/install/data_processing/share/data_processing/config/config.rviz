@@ -1,0 +1,247 @@
+# RViz Configuration File
+# This file defines the layout, displays, and properties for RViz visualization
+
+# -----------------------------------------------
+# UI Panel Configuration
+# -----------------------------------------------
+
+Panels:
+  # Main display panel showing visualization options
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      # Nodes that are expanded by default in the display tree
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /Grid1
+        - /PointCloud21
+        - /PointCloud21/Topic1
+        - /Marker1
+        - /Marker2
+      Splitter Ratio: 0.5    # Ratio of the split between property and value columns
+    Tree Height: 903
+  
+  # Panel for managing object selection
+  - Class: rviz_common/Selection
+    Name: Selection
+  
+  # Panel for configuring tool properties
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  
+  # Panel for controlling view settings
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+
+# -----------------------------------------------
+# Visualization Configuration
+# -----------------------------------------------
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    # Grid display showing reference grid in the world
+    - Alpha: 0.5                              # Transparency level (0-1)
+      Cell Size: 1                            # Size of each grid cell in meters
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164                    # RGB color of grid lines
+      Enabled: true                           # Whether this display is active
+      Line Style:
+        Line Width: 0.029999999329447746      # Width of grid lines
+        Value: Lines                          # Style of lines (Lines, Billboards)
+      Name: Grid
+      Normal Cell Count: 0                    # Extra cells along the normal direction
+      Offset:                                 # Origin offset
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY                               # Which plane to draw the grid on
+      Plane Cell Count: 10                    # Number of cells in each direction
+      Reference Frame: <Fixed Frame>          # Coordinate frame for the grid
+      Value: true
+
+    # Point cloud display for visualizing 3D point data
+    - Alpha: 1                                # Transparency level (0-1)
+      Autocompute Intensity Bounds: true      # Auto-calculate intensity min/max
+      Autocompute Value Bounds:
+        Max Value: 3.1500000953674316
+        Min Value: 0
+        Value: true
+      Axis: Z                                 # Which axis to use for color mapping
+      Channel Name: intensity                 # Which channel to use for coloring
+      Class: rviz_default_plugins/PointCloud2
+      Color: 255; 255; 255                    # Default RGB color
+      Color Transformer: AxisColor            # How to determine point colors
+      Decay Time: 0                           # Time before points disappear
+      Enabled: true                           # Whether this display is active
+      Invert Rainbow: false                   # Reverse the rainbow colormap
+      Max Color: 255; 255; 255               
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ               # How to determine point positions
+      Selectable: true                        # Whether points can be selected
+      Size (Pixels): 4                        # Size of points in pixels
+      Size (m): 0.009999999776482582         # Size of points in meters
+      Style: Points                           # Style of visualization (Points, Boxes, Spheres)
+      Topic:                                  # ROS topic to subscribe to
+        Depth: 5                              # Queue size
+        Durability Policy: Volatile           # QoS durability setting
+        History Policy: Keep Last             # QoS history setting
+        Reliability Policy: Reliable          # QoS reliability setting
+        Value: pcd                            # Topic name
+      Use Fixed Frame: true                   # Use the fixed frame for rendering
+      Use rainbow: true                       # Use rainbow colormap
+      Value: true
+
+    # First mesh marker display - for visualizing 3D mesh content
+    - Class: rviz_default_plugins/Marker      # Display type for visualizing marker messages
+      Enabled: true                           # Whether this display is active
+      Name: Marker                            # Display name
+      Namespaces:                             # Marker namespaces (filled at runtime)
+        {}
+      Topic:                                  # ROS topic to subscribe to
+        Depth: 5                              # Queue size
+        Durability Policy: Volatile           # QoS durability setting
+        History Policy: Keep Last             # QoS history setting
+        Reliability Policy: Reliable          # QoS reliability setting
+        Value: mesh_marker                  # Topic name for first mesh
+      Value: true
+
+    # Second mesh marker display - for visualizing 3D mesh content
+    - Class: rviz_default_plugins/Marker      # Display type for visualizing marker messages
+      Enabled: true                           # Whether this display is active
+      Name: Marker                            # Display name
+      Namespaces:                             # Marker namespaces (filled at runtime)
+        {}
+      Topic:                                  # ROS topic to subscribe to
+        Depth: 5                              # Queue size
+        Durability Policy: Volatile           # QoS durability setting
+        History Policy: Keep Last             # QoS history setting
+        Reliability Policy: Reliable          # QoS reliability setting
+        Value: modified_mesh_marker                  # Topic name for second mesh
+      Value: true
+
+  # Global visualization settings
+  Enabled: true                               # Whether visualization is enabled overall
+  Global Options:
+    Background Color: 48; 48; 48              # RGB background color (dark gray)
+    Fixed Frame: map                          # Default reference frame
+    Frame Rate: 30                            # Target frame rate for rendering
+  Name: root
+
+  # -----------------------------------------------
+  # Interaction Tool Configuration
+  # -----------------------------------------------
+  
+  Tools:
+    # Tool for interacting with displayed objects
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true             # Hide objects not being interacted with
+    
+    # Tool for moving the camera
+    - Class: rviz_default_plugins/MoveCamera
+    
+    # Tool for selecting objects
+    - Class: rviz_default_plugins/Select
+    
+    # Tool for focusing the camera on objects
+    - Class: rviz_default_plugins/FocusCamera
+    
+    # Tool for measuring distances
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0                 # RGB color for measurement lines
+    
+    # Tool for setting initial robot pose
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose                   # Topic to publish initial pose
+    
+    # Tool for setting navigation goals
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose                     # Topic to publish goal poses
+    
+    # Tool for publishing clicked points
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true                      # Publish on single click, not drag
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point                 # Topic to publish clicked points
+
+  # Transformation configuration
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF          # Transform plugin for coordinate transforms
+  Value: true
+
+  # -----------------------------------------------
+  # Camera View Configuration
+  # -----------------------------------------------
+  
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit       # Orbit-style camera controller
+      Distance: 11.848302841186523            # Distance from focal point
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false                          # Stereo rendering disabled
+      Focal Point:                            # Camera's focal point coordinates
+        X: -0.3050713837146759
+        Y: -0.500482439994812
+        Z: 0.7005792260169983
+      Focal Shape Fixed Size: true            # Whether focal shape size is fixed
+      Focal Shape Size: 0.05000000074505806   # Size of focal point indicator
+      Invert Z Axis: false                    # Don't invert Z axis
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582  # Near clipping plane distance
+      Pitch: 0.5153985023498535               # Camera pitch angle
+      Target Frame: <Fixed Frame>             # Reference frame for camera
+      Value: Orbit (rviz)                     # View type
+      Yaw: 1.8503971099853516                 # Camera yaw angle
+    Saved: ~                                  # No saved views
+
+# -----------------------------------------------
+# Window Geometry Configuration
+# -----------------------------------------------
+
+Window Geometry:
+  Displays:
+    collapsed: false                          # Whether Displays panel is collapsed
+  Height: 1132                                # Window height
+  Hide Left Dock: false                       # Whether left dock is hidden
+  Hide Right Dock: false                      # Whether right dock is hidden
+  QMainWindow State: 000000ff00000000fd0000000400000000000001af00000412fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d00000412000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f00000412fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d00000412000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004420000003efc0100000002fb0000000800540069006d00650100000000000004420000000000000000fb0000000800540069006d00650100000000000004500000000000000000000004ce0000041200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false                          # Whether Selection panel is collapsed
+  Tool Properties:
+    collapsed: false                          # Whether Tool Properties panel is collapsed
+  Views:
+    collapsed: false                          # Whether Views panel is collapsed
+  Width: 1944                                 # Window width
+  X: 292                                      # Window X position
+  Y: 297                                      # Window Y position
+  Y: 297

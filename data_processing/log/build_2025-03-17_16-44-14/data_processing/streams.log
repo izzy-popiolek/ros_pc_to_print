@@ -1,0 +1,27 @@
+[1.120s] Invoking command in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing': PYTHONPATH=/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/data_processing build --build-base /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build install --record /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/install.log --single-version-externally-managed install_data
+[1.512s] running egg_info
+[1.515s] writing build/data_processing/data_processing.egg-info/PKG-INFO
+[1.517s] writing dependency_links to build/data_processing/data_processing.egg-info/dependency_links.txt
+[1.520s] writing entry points to build/data_processing/data_processing.egg-info/entry_points.txt
+[1.521s] writing requirements to build/data_processing/data_processing.egg-info/requires.txt
+[1.521s] writing top-level names to build/data_processing/data_processing.egg-info/top_level.txt
+[1.524s] reading manifest file 'build/data_processing/data_processing.egg-info/SOURCES.txt'
+[1.527s] writing manifest file 'build/data_processing/data_processing.egg-info/SOURCES.txt'
+[1.529s] running build
+[1.530s] running build_py
+[1.531s] copying data_processing/mesh_to_stl_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+[1.532s] running install
+[1.533s] running install_lib
+[1.534s] copying /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing/mesh_to_stl_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+[1.536s] byte-compiling /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing/mesh_to_stl_node.py to mesh_to_stl_node.cpython-310.pyc
+[1.539s] running install_data
+[1.541s] running install_egg_info
+[1.543s] removing '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing-0.0.1-py3.10.egg-info' (and everything under it)
+[1.544s] Copying build/data_processing/data_processing.egg-info to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing-0.0.1-py3.10.egg-info
+[1.545s] running install_scripts
+[1.572s] Installing mesh_modifier_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+[1.572s] Installing mesh_publisher_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+[1.572s] Installing mesh_to_stl_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+[1.572s] Installing pcd_publisher_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+[1.573s] writing list of installed files to '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/install.log'
+[1.608s] Invoked command in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing' returned '0': PYTHONPATH=/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/data_processing build --build-base /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build install --record /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/install.log --single-version-externally-managed install_data

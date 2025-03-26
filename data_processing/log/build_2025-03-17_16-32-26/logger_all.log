@@ -1,0 +1,91 @@
+[0.470s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'data_processing']
+[0.470s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['data_processing'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7a935e55e0b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a935e55dae0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a935e55dae0>>, mixin_verb=('build',))
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.029s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.030s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.030s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.031s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.074s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'data_processing'
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.216s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install
+[1.218s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/izzypopiolek/ldlidar_ros_ws/install
+[1.225s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 281 installed packages in /opt/ros/iron
+[1.229s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'cmake_target' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'cmake_clean_cache' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'cmake_clean_first' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'cmake_force_configure' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'ament_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'catkin_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'data_processing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.357s] DEBUG:colcon.colcon_core.verb:Building package 'data_processing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing', 'merge_install': False, 'path': '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing', 'symlink_install': False, 'test_result_base': None}
+[1.358s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.359s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.359s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing' with build type 'ament_python'
+[1.360s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_processing', 'ament_prefix_path')
+[1.371s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/hook/ament_prefix_path.ps1'
+[1.376s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/hook/ament_prefix_path.dsv'
+[1.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/hook/ament_prefix_path.sh'
+[1.385s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.385s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.936s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing'
+[1.936s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.936s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing': PYTHONPATH=/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/data_processing build --build-base /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build install --record /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/install.log --single-version-externally-managed install_data
+[3.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing' returned '0': PYTHONPATH=/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/data_processing build --build-base /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build install --record /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/install.log --single-version-externally-managed install_data
+[3.220s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing' for CMake module files
+[3.221s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing' for CMake config files
+[3.225s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib'
+[3.225s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/bin'
+[3.225s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/pkgconfig/data_processing.pc'
+[3.226s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages'
+[3.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('data_processing', 'pythonpath')
+[3.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/hook/pythonpath.ps1'
+[3.228s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/hook/pythonpath.dsv'
+[3.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/hook/pythonpath.sh'
+[3.231s] Level 1:colcon.colcon_core.environment:checking '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/bin'
+[3.232s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(data_processing)
+[3.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/package.ps1'
+[3.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/package.dsv'
+[3.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/package.sh'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/package.bash'
+[3.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/package.zsh'
+[3.249s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/colcon-core/packages/data_processing)
+[3.250s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.251s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.252s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.252s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.293s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.294s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.294s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.330s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/local_setup.ps1'
+[3.336s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/_local_setup_util_ps1.py'
+[3.338s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/setup.ps1'
+[3.340s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/local_setup.sh'
+[3.341s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/_local_setup_util_sh.py'
+[3.343s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/setup.sh'
+[3.349s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/local_setup.bash'
+[3.352s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/setup.bash'
+[3.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/local_setup.zsh'
+[3.358s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/setup.zsh'

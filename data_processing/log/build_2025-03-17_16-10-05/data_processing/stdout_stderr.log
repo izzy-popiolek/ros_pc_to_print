@@ -1,0 +1,68 @@
+running egg_info
+creating build/data_processing/data_processing.egg-info
+writing build/data_processing/data_processing.egg-info/PKG-INFO
+writing dependency_links to build/data_processing/data_processing.egg-info/dependency_links.txt
+writing entry points to build/data_processing/data_processing.egg-info/entry_points.txt
+writing requirements to build/data_processing/data_processing.egg-info/requires.txt
+writing top-level names to build/data_processing/data_processing.egg-info/top_level.txt
+writing manifest file 'build/data_processing/data_processing.egg-info/SOURCES.txt'
+reading manifest file 'build/data_processing/data_processing.egg-info/SOURCES.txt'
+writing manifest file 'build/data_processing/data_processing.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+copying data_processing/mesh_to_stl_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+copying data_processing/mesh_modifier_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+copying data_processing/pcd_publisher_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+copying data_processing/mesh_publisher_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+copying data_processing/__init__.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing
+running install
+running install_lib
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+copying /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing/mesh_to_stl_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+copying /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing/mesh_modifier_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+copying /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing/pcd_publisher_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+copying /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing/mesh_publisher_node.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+copying /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/build/lib/data_processing/__init__.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing
+byte-compiling /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing/mesh_to_stl_node.py to mesh_to_stl_node.cpython-310.pyc
+byte-compiling /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing/mesh_modifier_node.py to mesh_modifier_node.cpython-310.pyc
+byte-compiling /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing/pcd_publisher_node.py to pcd_publisher_node.cpython-310.pyc
+byte-compiling /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing/mesh_publisher_node.py to mesh_publisher_node.cpython-310.pyc
+byte-compiling /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/ament_index
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/ament_index/resource_index
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/ament_index/resource_index/packages
+copying resource/data_processing -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/ament_index/resource_index/packages
+copying package.xml -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/launch
+copying launch/launcher.launch.py -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/launch
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/config
+copying config/config_0.rviz -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/config
+copying config/prusa.yaml -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/config
+copying config/cura.yaml -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/config
+copying config/config.rviz -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/config
+creating /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/fragment.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/teapot.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/bunny.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/cube(1).ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/rock_point_cloud.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/Axleshaft.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/rock_surface_structured.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/Pepper.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/Gemstone.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/cube_claude.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/rock_surface_point_cloud.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/rock_surface_structured_2.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+copying resource/cube.ply -> /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/share/data_processing/resource
+running install_egg_info
+Copying build/data_processing/data_processing.egg-info to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/python3.10/site-packages/data_processing-0.0.1-py3.10.egg-info
+running install_scripts
+Installing mesh_modifier_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+Installing mesh_publisher_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+Installing mesh_to_stl_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+Installing pcd_publisher_node script to /home/izzypopiolek/ldlidar_ros_ws/src/data_processing/install/data_processing/lib/data_processing
+writing list of installed files to '/home/izzypopiolek/ldlidar_ros_ws/src/data_processing/build/data_processing/install.log'
